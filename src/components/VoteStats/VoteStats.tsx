@@ -1,4 +1,4 @@
-import type { Votes } from '../types/votes';
+import type { Votes } from '../../types/votes';
 const VoteStats = ({ votes, totalVotes, positiveRate }: {
   votes: Votes;
   totalVotes: number;
