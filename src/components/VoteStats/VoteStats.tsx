@@ -1,9 +1,8 @@
-import type { Votes } from '../../types/votes';
-const VoteStats = ({ votes, totalVotes, positiveRate }: {
-  votes: Votes;
-  totalVotes: number;
-  positiveRate: number;
-}) => {
+
+import React from 'react';
+import type { VoteStatsProps } from '../../types/votes'; // або './VoteStats.tsx'
+
+const VoteStats: React.FC<VoteStatsProps> = ({ votes, totalVotes, positiveRate }) => {
   return (
     <div>
       <p>Good: {votes.good}</p>

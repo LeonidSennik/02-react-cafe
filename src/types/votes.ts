@@ -5,4 +5,9 @@ export interface Votes {
   bad: number;
 }
 
+export interface VoteStatsProps {
+  votes: Votes;
+  totalVotes: number;
+  positiveRate: number;
+}
 export type VoteType = 'good' | 'neutral' | 'bad';
