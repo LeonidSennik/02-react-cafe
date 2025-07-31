@@ -1,7 +1,13 @@
 
 
 import React from 'react';
-import type { VoteStatsProps } from '../../types/votes'; 
+import type { Votes } from '../../types/votes'; 
+
+interface VoteStatsProps {
+  votes: Votes;
+  totalVotes: number;
+  positiveRate: number;
+}
 
 const VoteStats: React.FC<VoteStatsProps> = ({ votes, totalVotes, positiveRate }) => (
   <section>
